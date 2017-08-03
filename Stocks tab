@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+  <!--style sheet for the website-->
+	<title>Girls Who Finance</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" 	href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+	<style>
+		body, html {
+    	height: 100%;
+    	font-family: "Inconsolata", sans-serif;
+	}
+  /*class for having a fixed top navbar that floats left*/
+.navbar a {
+  float: left;
+  display: block;
+  text-align: center;
+}
+</style>
+
+<style>
+* {box-sizing: border-box}
+/* Style the verticals tab */
+div.tab {
+    float: left;
+    font-family: sans-serif;
+    background-color: #f1f1f1;
+    width: 30%;
+    
+}
+div.fixed {
+    position: fixed;
+    top: 150px;
+    left: 10px;
+    width: 400px;
+    }
+/* Style the buttons inside the tab */
+div.tab button {
+    display: block;
+    background-color: inherit;
+    color: black;
+    padding: 20px 20px;
+    width: 100%;
+    border: none;
+    outline: none;
+    text-align: left;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 15px;
+}
+/* Change background color of buttons on hover */
+div.tab button:hover {
+    background-color: #ddd;
+}
+/* Create an active/current "tab button" class */
+div.tab button.active {
+    background-color: #ccc;
+}
+/* Style the tab content */
+.tabcontent {
+    float: right;
+    padding: 0px 12px;
+    border: none;
+    width: 80%;
+    height: 300px;
+}
+h3{
+	text-decoration: underline;
+}
+</style>
+
+<body>
+    <!-- Links (sit on top) -->
+    <div class="navbar">
+      <div class="w3-top">
+        <div class="w3-row w3-padding w3-black">
+          <div class="w3-col s3">
+            <a 	href="https://eas962.github.io/girlswhofinance/website.html" class="w3-button w3-block w3-black">HOME</a>
+          </div>
+          <div class="w3-col s3">
+            <a href="https://eas962.github.io/girlswhofinance/stocks.html" class="w3-button w3-block w3-black">STOCKS</a>
+          </div>
+          <div class="w3-col s3">
+            <a href="https://eas962.github.io/girlswhofinance/PF.html" class="w3-button w3-block w3-black">PERSONAL FINANCE</a>
+          </div>
+          <div class="w3-col s3">
+            <a href="https://eas962.github.io/girlswhofinance/resources.html" class="w3-button w3-block w3-black">RESOURCES</a>
+          </div>
+        </div>
+      </div>
+    </div>
+<!--these are the tabs-->
+      <div class="w3-content" style="max-width:700px"> 
+        <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">STOCKS</span></h5>
+        <div class="fixed">
+          <div class="tab">
+            <button class="tablinks" onclick="openTab(event, 'Chapter 1')">Chapter 1</button>
+            <button class="tablinks" onclick="openTab(event, 'Chapter 2')">Chapter 2</button>
+            <button class="tablinks" onclick="openTab(event, 'Chapter 3')">Chapter 3</button>
+            <button class="tablinks" onclick="openTab(event, 'Chapter 4')">Chapter 4</button>
+            <button class="tablinks" onclick="openTab(event, 'Glossary')">Glossary</button>
+
+          </div>
+        </div>
+        <div id="stock home" class ="tabcontent"> 
+          <p> This is the Stocks default page. </p>
+         </div> 
+        <div id="Chapter 1" class="tabcontent" style="display: none;">
+          <h3>Chapter 1</h3>
+          <h4>Covered Calls and Options</h4>
+          <h5>What is a covered Call?</h5>
+          <p>A covered call is a trading strategy where you own a stock and sell options on it. This is an easy way to start trading while also making a decent profit. </p>
+          <h4>Let's Break This Down</h4>
+          <h5>What is an Option and What Does it Mean to Sell it?</h5>
+          <p>An option is a derivative (think Latin roots, not math), which means that it is not the actual stock, but a form of it that moves based on the actual stock (called an underlying).</p>
+          <p>Example: 100 shares of Apple stock would cost $15,500, but an option for 100 shares would cost $500. If Apple goes up $5 a share, you make the same profit $500. That is 3% if you own the stock, but 100% if you own the option.</p>
+        </div>
+
+        <div id="Chapter 2" class="tabcontent" style="display: none;">
+          <h3>Chapter 2</h3>
+          <p>this is chapter 2</p> 
+        </div>
+
+        <div id="Glossary" class="tabcontent" style="display: none;">
+          <h3>Glossary</h3>
+          <p>this is a glossary of terms</p>
+        </div> 
+
+        <div id="Chapter 3" class="tabcontent" style="display: none;">
+          <h3>Chapter 3</h3>
+          <p>this is chapter 3</p>
+        </div>
+
+        <div id="Chapter 4" class="tabcontent" style="display: none;">
+          <h3>Chapter 4</h3>
+          <p>this is chapter 4</p>
+        </div>
+      </div> 
+
+    <script>
+    function openTab(evt, TabName) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+        document.getElementById(TabName).style.display = "block";
+        evt.currentTarget.className += " active";
+    }
+    // Get the element with id="defaultOpen" and click on it
+    document.getElementById("defaultOpen").click();
+    </script>
+
+</body>
+</html>
