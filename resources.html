@@ -70,18 +70,23 @@ div.tab button.active {
 
 <body>
    <!-- Links (sit on top) -->
+   <!--The tab bar on top-->
     <div class="navbar">
       <div class="w3-top">
         <div class="w3-row w3-padding w3-black">
-          <div class="w3-col s3">
-            <a 	href="https://eas962.github.io/girlswhofinance/website.html" class="w3-button w3-block w3-black">HOME</a>
+        	<!--Takes you to the homepage-->
+        	<div class="w3-col s3">
+            	<a 	href="https://eas962.github.io/girlswhofinance/website.html" class="w3-button w3-block w3-black">HOME</a>
           </div>
+          <!--Takes you to the Stocks page-->
           <div class="w3-col s3">
             <a href="https://eas962.github.io/girlswhofinance/stocks.html" class="w3-button w3-block w3-black">STOCKS</a>
           </div>
+          <!-- Takes you to the personal finance page-->
           <div class="w3-col s3">
             <a href="https://eas962.github.io/girlswhofinance/PF.html" class="w3-button w3-block w3-black">PERSONAL FINANCE</a>
           </div>
+          <!--Takes you to the resources page-->
           <div class="w3-col s3">
             <a href="https://eas962.github.io/girlswhofinance/resources.html" class="w3-button w3-block w3-grey">RESOURCES</a>
           </div>
@@ -93,14 +98,20 @@ div.tab button.active {
         <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">RESOURCES</span></h5>
         <div class="fixed">
           <div class="tab">
+          	<!--takes you to articles-->
             <button class="tablinks" onclick="openTab(event, 'Articles')"><strong>Articles</button>
+            <!--takes you to educators-->
             <button class="tablinks" onclick="openTab(event, 'Educational')">Educational</button>
+            <!--takes you to chapter 3-->
             <button class="tablinks" onclick="openTab(event, 'Chapter 3')">Chapter 3</button>
+            <!--takes you to chapter 4-->
             <button class="tablinks" onclick="openTab(event, 'Chapter 4')">Chapter 4</button>
-		<button class="tablinks" onclick="openTab(event, 'Glossary')">Glossary</strong></button>
+            <!--takes you to gloassary-->
+			<button class="tablinks" onclick="openTab(event, 'Glossary')">Glossary</strong></button>
 
           </div>
         </div>
+        <!--resouces homepage-->
         <div id="resources home" class ="tabcontent"> 
           <p> This is the RESOURCES default page. </p>
          </div> 
@@ -128,7 +139,8 @@ div.tab button.active {
           <p>Some text some text some text some text..</p>
           <p>Some text some text some text some text..</p>
         </div>
-
+		
+        <!-- info for the education tab-->
         <div id="Educational" class="tabcontent" style="display: none;">
           <h3>Educational</h3>
           <a href ='https://www.fool.com'>The Motley Fool</a>
@@ -138,23 +150,27 @@ div.tab button.active {
           <img src = 'https://github.com/camrynreid/GirlsWhoFinance/blob/gh-pages/tasty-trade.jpg?raw=true'>
           <p>TastyTrade is an online resource that helps teach trading options through videos and quick lessons. It is also host to talk shows of many professional traders who answer questions and emails their consumers have or talk about what is currently happening on the stock market.</p>
         </div>
-
+		
+        <!--what will go inside of the glossary-->
         <div id="Glossary" class="tabcontent" style="display: none;">
           <h3>Glossary</h3>
           <p>this is a glossary of terms</p>
         </div> 
-
+		
+        <!--what goes inside of chapter three tab--> 
         <div id="Chapter 3" class="tabcontent" style="display: none;">
           <h3>Chapter 3</h3>
           <p>this is chapter 3</p>
         </div>
-
+        
+		<!--what goes inside of chapter four tab-->
         <div id="Chapter 4" class="tabcontent" style="display: none;">
           <h3>Chapter 4</h3>
           <p>this is chapter 4</p>
         </div>
       </div> 
-
+      
+	<!--javascript-->
     <script>
     function openTab(evt, TabName) {
         var i, tabcontent, tablinks;
