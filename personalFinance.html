@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+  <!--style sheet for the website-->
+	<title>Girls Who Finance</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" 	href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+	<style>
+		body, html {
+    	height: 100%;
+    	font-family: "Inconsolata", sans-serif;
+	}
+  /*class for having a fixed top navbar that floats left*/
+.navbar a {
+  float: left;
+  display: block;
+  text-align: center;
+}
+</style>
+
+<style>
+* {box-sizing: border-box}
+/* Style the verticals tab */
+div.tab {
+    float: left;
+    font-family: sans-serif;
+    background-color: #f1f1f1;
+    width: 30%;
+    
+}
+div.fixed {
+    position: fixed;
+    top: 150px;
+    left: 10px;
+    width: 600px;
+    }
+/* Style the buttons inside the tab */
+div.tab button {
+    display: block;
+    background-color: inherit;
+    color: black;
+    padding: 12px 20px;
+    width: 100%;
+    border: none;
+    outline: none;
+    text-align: left;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 15px;
+	font-family: "Inconsolata", sans-serif;
+}
+/* Change background color of buttons on hover */
+div.tab button:hover {
+    background-color: #ddd;
+}
+/* Create an active/current "tab button" class */
+div.tab button.active {
+    background-color: #ccc;
+}
+/* Style the tab content */
+.tabcontent {
+    float: right;
+    padding: 0px 12px;
+    border: none;
+    width: 80%;
+    height: 300px;
+}
+</style>
+
+<body>
+   <!-- Links (sit on top) -->
+    <div class="navbar">
+      <div class="w3-top">
+        <div class="w3-row w3-padding w3-black">
+          <div class="w3-col s3">
+            <a 	href="https://eas962.github.io/girlswhofinance/website.html" class="w3-button w3-block w3-black">HOME</a>
+          </div>
+          <div class="w3-col s3">
+            <a href="https://eas962.github.io/girlswhofinance/stocks.html" class="w3-button w3-block w3-black">STOCKS</a>
+          </div>
+          <div class="w3-col s3">
+            <a href="https://eas962.github.io/girlswhofinance/PF.html" class="w3-button w3-block w3-black">PERSONAL FINANCE</a>
+          </div>
+          <div class="w3-col s3">
+            <a href="https://eas962.github.io/girlswhofinance/resources.html" class="w3-button w3-block w3-grey">RESOURCES</a>
+          </div>
+        </div>
+      </div>
+   	</div>
+<!--these are the tabs-->
+      <div class="w3-content" style="max-width:700px"> 
+        <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">RESOURCES</span></h5>
+        <div class="fixed">
+          <div class="tab">
+            <button class="tablinks" onclick="openTab(event, 'Articles')"><strong>Articles</button>
+            <button class="tablinks" onclick="openTab(event, 'Educational')">Educational</button>
+            <button class="tablinks" onclick="openTab(event, 'Chapter 3')">Chapter 3</button>
+            <button class="tablinks" onclick="openTab(event, 'Chapter 4')">Chapter 4</button>
+		<button class="tablinks" onclick="openTab(event, 'Glossary')">Glossary</strong></button>
+
+          </div>
+        </div>
+        <div id="resources home" class ="tabcontent"> 
+          <p> This is the RESOURCES default page. </p>
+         </div> 
+        <div id="Articles" class="tabcontent" style="display: none;">
+          <h3>Articles</h3>
+          <p>this is articles</p>
+          <p>Some text some text some text some text..</p>
+          <p>Some text some text some text some text..</p>
+          <p>Some text some text some text some text..</p>
+          <p>Some text some text some text some text..</p>
+          <p>Some text some text some text some text..</p>
+          <p>Some text some text some text some text..</p>
+          <p>Some text some text some text some text..</p>
+          <p>Some text some text some text some text..</p>
+          <p>Some text some text some text some text..</p>
+          <p>Some text some text some text some text..</p>
+          <p>Some text some text some text some text..</p>
+          <p>Some text some text some text some text..</p>
+          <p>Some text some text some text some text..</p>
+          <p>Some text some text some text some text..</p>
+          <p>Some text some text some text some text..</p>
+          <p>Some text some text some text some text..</p>
+          <p>Some text some text some text some text..</p>
+          <p>Some text some text some text some text..</p>
+          <p>Some text some text some text some text..</p>
+          <p>Some text some text some text some text..</p>
+        </div>
+
+        <div id="Educational" class="tabcontent" style="display: none;">
+          <h3>Educational</h3>
+          <a href ='https://www.fool.com'>The Motley Fool</a>
+          <img src = 'https://github.com/camrynreid/GirlsWhoFinance/blob/gh-pages/theMotleyFool.png?raw=true' alt='The Motley Fool;' style='width:500;height:244;'>
+          <p>The Motley Fool is a website that is designed to help educate people on how to invest and manage their personal finances. Through articles and how to’s, The Motley Fool is a great resource for both people starting out trading and those who have been at it for years.</p> 
+          <a href = 'https://www.tastytrade.com/tt/'>TastyTrade</a>
+          <img src = 'https://github.com/camrynreid/GirlsWhoFinance/blob/gh-pages/tasty-trade.jpg?raw=true'>
+          <p>TastyTrade is an online resource that helps teach trading options through videos and quick lessons. It is also host to talk shows of many professional traders who answer questions and emails their consumers have or talk about what is currently happening on the stock market.</p>
+        </div>
+
+        <div id="Glossary" class="tabcontent" style="display: none;">
+          <h3>Glossary</h3>
+          <p>this is a glossary of terms</p>
+        </div> 
+
+        <div id="Chapter 3" class="tabcontent" style="display: none;">
+          <h3>Chapter 3</h3>
+          <p>this is chapter 3</p>
+        </div>
+
+        <div id="Chapter 4" class="tabcontent" style="display: none;">
+          <h3>Chapter 4</h3>
+          <p>this is chapter 4</p>
+        </div>
+      </div> 
+
+    <script>
+    function openTab(evt, TabName) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+        document.getElementById(TabName).style.display = "block";
+        evt.currentTarget.className += " active";
+    }
+    // Get the element with id="defaultOpen" and click on it
+    document.getElementById("defaultOpen").click();
+    </script>
+
+</body>
+</html>
